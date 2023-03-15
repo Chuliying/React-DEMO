@@ -1,0 +1,57 @@
+$theme-color: #21273d;
+$sec-color: #2c434d;
+$sub-color: #473b36;
+
+.activities {
+    .container {
+        max-width: 800px;
+    }
+
+    table {
+        margin: 15px 0;
+        td {
+            padding: 5px 0;
+            vertical-align: top;
+            color: #555;
+        }
+    }
+
+    p + h4,
+    ul + h4 {
+        padding: 1em 0 0;
+        font-weight: bold;
+    }
+
+    p {
+        color: #555;
+
+        b {
+            color: $theme-color;
+        }
+    }
+
+    .navi {
+        text-align: center;
+        margin-bottom: 35px;
+        position: sticky;
+        top: 75px;
+
+        z-index: 1;
+        li {
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 6px 16px;
+            margin: 0px 4px;
+            //border: #ccc 1px solid;
+            color: #fff;
+            background: $sub-color;
+            border-radius: 5px;
+            opacity: 0.85;
+            @media (max-width: 640px) {
+                margin: 2px 4px;
+                padding: 6px 12px;
+            }
+        }
+    }
+}

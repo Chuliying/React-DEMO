@@ -1,0 +1,60 @@
+.about {
+    p {
+        line-height: 1.55em;
+    }
+    .container {
+        max-width: 900px;
+    }
+    .main {
+        align-items: center;
+        margin-bottom: 45px;
+        max-width: 1024px;
+        @media (max-width: 640px) {
+            width: auto;
+            margin: 15px;
+        }
+        .logo__container {
+            width: 47.5%;
+            margin-right: 15px;
+            @media (max-width: 640px) {
+                width: 100%;
+            }
+            img {
+                margin: auto;
+                width: 100%;
+                max-width: 325px;
+            }
+        }
+    }
+    .logo__container {
+        padding: 50px;
+        width: 100%;
+        @media (max-width: 640px) {
+            padding: 5px;
+            margin-bottom: 25px;
+        }
+        img {
+            max-width: 330px;
+
+            margin: auto;
+        }
+    }
+
+    .waterfall {
+        margin: 0px auto;
+        column-count: 2;
+        /*欄數*/
+        column-gap: 15px;
+        max-width: 1024px;
+
+        @media (max-width: 640px) {
+            column-count: 1;
+            padding: 15px;
+        }
+
+        > div {
+            height: fit-content;
+            break-inside: avoid;
+        }
+    }
+}
